@@ -1,9 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[chapter2]]></title>
+    <title><![CDATA[第五篇测试]]></title>
+    <url>%2F2019%2F10%2F30%2F%E7%AC%AC%E4%BA%94%E7%AF%87%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[下面是一段代码块 12def fn(): print('this is a function')]]></content>
+      <categories>
+        <category>learning</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[第四篇测试]]></title>
+    <url>%2F2019%2F10%2F30%2F%E7%AC%AC%E5%9B%9B%E7%AF%87%E6%B5%8B%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[下面是一张表格 第一列 第二列 第三列 第四列 第五列 东邪 西毒 南帝 北丐 中神通 黄药师 欧阳锋 段智兴 洪七公 王重阳 下面是一条线和一个链接]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>学习</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[测试文章]]></title>
     <url>%2F2019%2F09%2F27%2Fchapter2%2F</url>
-    <content type="text"></content>
+    <content type="text"><![CDATA[这是有序列表 东邪 西毒 南帝 北丐 中神通 这是无序列表 东邪 西狂 南僧 北侠 中顽童]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>

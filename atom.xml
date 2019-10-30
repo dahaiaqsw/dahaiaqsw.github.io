@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>dahaiaqsw</title>
+  <title>岳镇海渎</title>
   
   <subtitle>岳镇海渎</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-09-27T11:03:01.129Z</updated>
+  <updated>2019-10-30T13:36:14.894Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,17 +17,107 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>chapter2</title>
-    <link href="http://yoursite.com/2019/09/27/chapter2/"/>
-    <id>http://yoursite.com/2019/09/27/chapter2/</id>
-    <published>2019-09-27T11:03:01.000Z</published>
-    <updated>2019-09-27T11:03:01.129Z</updated>
+    <title>第五篇测试</title>
+    <link href="http://yoursite.com/2019/10/30/%E7%AC%AC%E4%BA%94%E7%AF%87%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/10/30/第五篇测试/</id>
+    <published>2019-10-30T13:18:31.000Z</published>
+    <updated>2019-10-30T13:36:14.894Z</updated>
+    
+    <content type="html"><![CDATA[<p>下面是一段代码块</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">()</span>:</span></span><br><span class="line">  print(<span class="string">'this is a function'</span>)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
+    
+      
+      
+        &lt;p&gt;下面是一段代码块&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/spa
+      
     
     </summary>
     
     
+      <category term="learning" scheme="http://yoursite.com/categories/learning/"/>
+    
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>第四篇测试</title>
+    <link href="http://yoursite.com/2019/10/30/%E7%AC%AC%E5%9B%9B%E7%AF%87%E6%B5%8B%E8%AF%95/"/>
+    <id>http://yoursite.com/2019/10/30/第四篇测试/</id>
+    <published>2019-10-30T13:17:08.000Z</published>
+    <updated>2019-10-30T13:32:02.701Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="下面是一张表格"><a href="#下面是一张表格" class="headerlink" title="下面是一张表格"></a>下面是一张表格</h4><table><thead><tr><th align="center">第一列</th><th align="center">第二列</th><th align="center">第三列</th><th align="center">第四列</th><th>第五列</th></tr></thead><tbody><tr><td align="center">东邪</td><td align="center">西毒</td><td align="center">南帝</td><td align="center">北丐</td><td>中神通</td></tr><tr><td align="center">黄药师</td><td align="center">欧阳锋</td><td align="center">段智兴</td><td align="center">洪七公</td><td>王重阳</td></tr></tbody></table><a id="more"></a><h5 id="下面是一条线和一个链接"><a href="#下面是一条线和一个链接" class="headerlink" title="下面是一条线和一个链接"></a>下面是一条线和一个链接</h5><hr>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;下面是一张表格&quot;&gt;&lt;a href=&quot;#下面是一张表格&quot; class=&quot;headerlink&quot; title=&quot;下面是一张表格&quot;&gt;&lt;/a&gt;下面是一张表格&lt;/h4&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;第一列&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;第二列&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;第三列&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;第四列&lt;/th&gt;
+&lt;th&gt;第五列&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;东邪&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;西毒&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;南帝&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;北丐&lt;/td&gt;
+&lt;td&gt;中神通&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;黄药师&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;欧阳锋&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;段智兴&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;洪七公&lt;/td&gt;
+&lt;td&gt;王重阳&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;&lt;/table&gt;
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="学习" scheme="http://yoursite.com/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>测试文章</title>
+    <link href="http://yoursite.com/2019/09/27/chapter2/"/>
+    <id>http://yoursite.com/2019/09/27/chapter2/</id>
+    <published>2019-09-27T11:03:01.000Z</published>
+    <updated>2019-10-30T13:51:50.839Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="这是有序列表"><a href="#这是有序列表" class="headerlink" title="这是有序列表"></a>这是有序列表</h3><ol><li>东邪</li><li>西毒</li><li>南帝</li><li>北丐</li><li>中神通</li></ol><h4 id="这是无序列表"><a href="#这是无序列表" class="headerlink" title="这是无序列表"></a>这是无序列表</h4><ul><li>东邪</li><li>西狂</li><li>南僧</li><li>北侠</li><li>中顽童</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h3 id=&quot;这是有序列表&quot;&gt;&lt;a href=&quot;#这是有序列表&quot; class=&quot;headerlink&quot; title=&quot;这是有序列表&quot;&gt;&lt;/a&gt;这是有序列表&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;东邪&lt;/li&gt;
+&lt;li&gt;西毒&lt;/li&gt;
+&lt;li&gt;南帝&lt;/li&gt;
+&lt;li&gt;北丐&lt;/li&gt;
+&lt;li&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="测试" scheme="http://yoursite.com/tags/%E6%B5%8B%E8%AF%95/"/>
     
   </entry>
   
@@ -36,16 +126,13 @@
     <link href="http://yoursite.com/2019/09/27/hello-world/"/>
     <id>http://yoursite.com/2019/09/27/hello-world/</id>
     <published>2019-09-27T10:09:13.691Z</published>
-    <updated>2019-09-27T10:09:13.692Z</updated>
+    <updated>2019-10-30T13:12:56.780Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><a id="more"></a><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
     
     </summary>
     
