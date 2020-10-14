@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[python装饰器]]></title>
+    <url>%2F2019%2F11%2F08%2Fpython%E8%A3%85%E9%A5%B0%E5%99%A8%2F</url>
+    <content type="text"><![CDATA[装饰器：顾名思义就是用来装饰某一个东西的。在python中，这里的东西有两个，一个是函数，另一个是类；而装饰器本身也既可以是函数，也可以是类。 用途： 在不改变其它函数或类源代码的前提下为该函数和类增加额外功能。 应用场景： 插入日志、性能测试、事务处理、缓存、权限校验等 。 一个简单的例子如下： 12345def fn(): j = 0 for i in range(10000): j += i print(j) 现在我们要计算程序耗时，就可以写一个装饰器如下： 12345678import timedef wraper(fn): def inner(*args, **kwargs): start = time.time() fn(*args, **kwargs) print(f'cost &#123;time.time() - start&#125;') return inner 使用语法糖@装饰我们的原函数fn： 123456@wraperdef fn(): j = 0 for i in range(10000): j += i print(j) 调用函数fn()，输出结果如下： 1249995000cost 0.000997304916381836]]></content>
+      <categories>
+        <category>python</category>
+      </categories>
+      <tags>
+        <tag>python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[第五篇测试]]></title>
     <url>%2F2019%2F10%2F30%2F%E7%AC%AC%E4%BA%94%E7%AF%87%E6%B5%8B%E8%AF%95%2F</url>
-    <content type="text"><![CDATA[下面是一段代码块 12def fn(): print('this is a function')]]></content>
+    <content type="text"><![CDATA[下面是一段代码块 12def fn(): print('this is a function') 下面是另一段代码 1234567891011121314151617class Descriptor(object): def __get__(self, instance, owner_class): print(instance) print(owner_class) print('get') def __set__(self, instance, value): print(instance) if not isinstance(value, int): raise ValueError(f'&#123;value&#125; must be a integer') print('set') def __delete__(self, isinstance): print(isinstance) print('del')]]></content>
       <categories>
         <category>learning</category>
       </categories>

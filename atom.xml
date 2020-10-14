@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-10-30T13:36:14.894Z</updated>
+  <updated>2019-11-09T06:00:52.129Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,13 +17,41 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>python装饰器</title>
+    <link href="http://yoursite.com/2019/11/08/python%E8%A3%85%E9%A5%B0%E5%99%A8/"/>
+    <id>http://yoursite.com/2019/11/08/python装饰器/</id>
+    <published>2019-11-08T08:47:39.000Z</published>
+    <updated>2019-11-09T06:00:52.129Z</updated>
+    
+    <content type="html"><![CDATA[<p>装饰器：顾名思义就是用来装饰某一个东西的。在python中，这里的东西有两个，一个是函数，另一个是类；而装饰器本身也既可以是函数，也可以是类。</p><p>用途： 在不改变其它函数或类源代码的前提下为该函数和类增加额外功能。</p><p>应用场景： 插入日志、性能测试、事务处理、缓存、权限校验等 。</p><p>一个简单的例子如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">()</span>:</span></span><br><span class="line">    j = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">        j += i</span><br><span class="line">    print(j)</span><br></pre></td></tr></table></figure><p>现在我们要计算程序耗时，就可以写一个装饰器如下：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">wraper</span><span class="params">(fn)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">inner</span><span class="params">(*args, **kwargs)</span>:</span></span><br><span class="line">        start = time.time()</span><br><span class="line">        fn(*args, **kwargs)</span><br><span class="line">        print(<span class="string">f'cost <span class="subst">&#123;time.time() - start&#125;</span>'</span>)</span><br><span class="line">    <span class="keyword">return</span> inner</span><br></pre></td></tr></table></figure><p>使用语法糖@装饰我们的原函数fn：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@wraper</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">()</span>:</span></span><br><span class="line">    j = <span class="number">0</span></span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">        j += i</span><br><span class="line">    print(j)</span><br></pre></td></tr></table></figure><p>调用函数fn()，输出结果如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">49995000</span><br><span class="line">cost 0.000997304916381836</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;装饰器：顾名思义就是用来装饰某一个东西的。在python中，这里的东西有两个，一个是函数，另一个是类；而装饰器本身也既可以是函数，也可以是类。&lt;/p&gt;
+&lt;p&gt;用途： 在不改变其它函数或类源代码的前提下为该函数和类增加额外功能。&lt;/p&gt;
+&lt;p&gt;应用场景： 插入日志、性能测试、
+      
+    
+    </summary>
+    
+    
+      <category term="python" scheme="http://yoursite.com/categories/python/"/>
+    
+    
+      <category term="python" scheme="http://yoursite.com/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
     <title>第五篇测试</title>
     <link href="http://yoursite.com/2019/10/30/%E7%AC%AC%E4%BA%94%E7%AF%87%E6%B5%8B%E8%AF%95/"/>
     <id>http://yoursite.com/2019/10/30/第五篇测试/</id>
     <published>2019-10-30T13:18:31.000Z</published>
-    <updated>2019-10-30T13:36:14.894Z</updated>
+    <updated>2019-10-30T14:19:58.563Z</updated>
     
-    <content type="html"><![CDATA[<p>下面是一段代码块</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">()</span>:</span></span><br><span class="line">  print(<span class="string">'this is a function'</span>)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<p>下面是一段代码块</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fn</span><span class="params">()</span>:</span></span><br><span class="line">  print(<span class="string">'this is a function'</span>)</span><br></pre></td></tr></table></figure><p>下面是另一段代码</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Descriptor</span><span class="params">(object)</span>:</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__get__</span><span class="params">(self, instance, owner_class)</span>:</span></span><br><span class="line">        print(instance)</span><br><span class="line">        print(owner_class)</span><br><span class="line">        print(<span class="string">'get'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__set__</span><span class="params">(self, instance, value)</span>:</span></span><br><span class="line">        print(instance)</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">not</span> isinstance(value, int):</span><br><span class="line">            <span class="keyword">raise</span> ValueError(<span class="string">f'<span class="subst">&#123;value&#125;</span> must be a integer'</span>)</span><br><span class="line">    </span><br><span class="line">        print(<span class="string">'set'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__delete__</span><span class="params">(self, isinstance)</span>:</span></span><br><span class="line">        print(isinstance)</span><br><span class="line">        print(<span class="string">'del'</span>)</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
