@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-10-22T09:39:34.339Z</updated>
+  <updated>2020-10-27T05:56:11.185Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flask静态文件</title>
+    <link href="http://yoursite.com/2020/10/27/flask%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/"/>
+    <id>http://yoursite.com/2020/10/27/flask静态文件/</id>
+    <published>2020-10-27T04:40:20.000Z</published>
+    <updated>2020-10-27T05:56:11.185Z</updated>
+    
+    <content type="html"><![CDATA[<p>用flask写个简单的todolist，只有一个模板文件，因为要用jquery $.ajax与后台互动，就简单地新建了一个js文件，没有放在static文件夹下，（flask默认去static里寻找静态文件）直接跟模板文件放在同一个目录下，结果当然找不到。虽然在模板文件（index.html）中ctrl+鼠标左键能够链接到js文件，但是浏览器依然加载不上来。</p><p><img src="../source/assets/flask%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/image-20201027124753590.png" alt="image-20201027124753590"></p><p>无耐只能放进static里面。</p><p><img src="../source/assets/flask%E9%9D%99%E6%80%81%E6%96%87%E4%BB%B6/image-20201027124917656.png" alt="image-20201027124917656"></p><p>然后在index.html中引入，两种方法：</p><ol><li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"../static/fin-del.js"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure></li><li><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;script type=<span class="string">"text/javascript"</span> src=<span class="string">"&#123;&#123; url_for('static', filename='fin-del.js') &#125;&#125;"</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure><p>第一种相对路径；第二种使用flask的url_for()函数。</p></li></ol><p>如果就是不想使用static怎么办？</p><p>这时就要用到static_folders和static_url_for两个关键字参数了，这两个参数在我们建立flask实例的时候传入。对于文章开头的问题，我们可以这样使用。</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">app = Flask(__name__, static_folders=<span class="string">'templates'</span>, static_url_path=<span class="string">''</span>)</span><br></pre></td></tr></table></figure><p>顾名思义，static_url_path是用来改变静态文件path的，我们将它设置为空字符串。</p><p>而static_folders是用来改变静态文件目录的，此处即为templates.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;用flask写个简单的todolist，只有一个模板文件，因为要用jquery $.ajax与后台互动，就简单地新建了一个js文件，没有放在static文件夹下，（flask默认去static里寻找静态文件）直接跟模板文件放在同一个目录下，结果当然找不到。虽然在模板文件（i
+      
+    
+    </summary>
+    
+    
+      <category term="flask" scheme="http://yoursite.com/categories/flask/"/>
+    
+    
+      <category term="python flask" scheme="http://yoursite.com/tags/python-flask/"/>
+    
+  </entry>
   
   <entry>
     <title>自律该有多难</title>
