@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-10-27T05:56:11.185Z</updated>
+  <updated>2020-11-06T04:00:41.889Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>flask_mongoengine</title>
+    <link href="http://yoursite.com/2020/11/06/flask-mongoengine/"/>
+    <id>http://yoursite.com/2020/11/06/flask-mongoengine/</id>
+    <published>2020-11-06T03:55:09.000Z</published>
+    <updated>2020-11-06T04:00:41.889Z</updated>
+    
+    <content type="html"><![CDATA[<p>在flask中应用flask_mongoengine</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">app = Flask(__name__)</span><br><span class="line">app.config[<span class="string">'MONGODB_SETTINGS'</span>] = &#123;</span><br><span class="line">    <span class="string">'db'</span>: <span class="string">'todo_new'</span>,</span><br><span class="line">    <span class="string">'host'</span>: <span class="string">'127.0.0.1'</span>,</span><br><span class="line">    <span class="string">'port'</span>: <span class="number">27017</span></span><br><span class="line">&#125;</span><br><span class="line">db = MongoEngine(app)</span><br></pre></td></tr></table></figure><p>配置顺序如上，mongodb配置必须在MongoEngine之前，否则配置不会生效，只会连接到默认数据库test.</p><p>坑了半天，网上教程千篇一律的配置写在初始化之后。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;在flask中应用flask_mongoengine&lt;/p&gt;
+&lt;figure class=&quot;highlight python&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span c
+      
+    
+    </summary>
+    
+    
+      <category term="flask" scheme="http://yoursite.com/categories/flask/"/>
+    
+    
+      <category term="flask mongoengine" scheme="http://yoursite.com/tags/flask-mongoengine/"/>
+    
+  </entry>
   
   <entry>
     <title>flask静态文件</title>
