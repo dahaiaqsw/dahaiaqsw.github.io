@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[flask_mail]]></title>
+    <url>%2F2020%2F11%2F28%2Fflask-mail%2F</url>
+    <content type="text"><![CDATA[在flask shell中测试flask_mail发送邮件，一直报如下错误： 1ConnectionRefusedError: [WinError 10061] 由于目标计算机积极拒绝，无法连接。 网上找了半天也没解决。 之后新建python文件，在flask环境中，使用flask_mail发送邮件，代码如下： 123456789101112131415161718192021222324252627282930from flask import Flaskfrom flask_mail import Message, Mailapp = Flask(__name__)app.config.update(&#123; 'MAIL_SERVER': 'smtp.163.com', 'MAIL_PORT': 465, # 'MAIL_USE_TLS': True, 'MAIL_USE_SSL': True, 'MAIL_USERNAME': '*****@163.com', 'MAIL_PASSWORD': 'IZ************XL'&#125;)mail = Mail(app)@app.route('/')def index(): send_mail(app, '*********@qq.com', subject='test mail2') return 'index'def send_mail(app, to, subject): msg = Message(subject=subject, sender=app.config['MAIL_USERNAME'], recipients=[to]) msg.body = 'this is a test mail from flask' mail.send(msg)if __name__ == '__main__': app.run(debug=True, port='5500') 开始照狗书的配置MAIL_USE_TLS=True，MAIL_USE_SSL默认即False，报错如下： 1smtplib.SMTPServerDisconnected: Connection unexpectedly closed 后查找发现使用smtplib发送邮件的时候，也会有上述错误，解决办法是:：将smtp = smtplib.SMTP(mailserver,port=465)改成smtp = smtplib.SMTP_SSL(mailserver,port=465)连接 。 受此启发，就设置MAIL_USE_SSL=True，即启用安全套接层协议。将传输层安全协议MAIL_USE_TLS关闭，即设置为False，两处问题都解决。 总结一下发送邮件需要注意的几点： 1、配置项： ​ MAIL_SERVER：smtp.163.com，即将网易163作为我们的邮件服务器； ​ MAIL_PASSWORD：IZ****XL， 即授权码（不是邮箱密码），在网易邮箱设置中开启 POP3/SMTP服务 ，会自动提供。 ​ MAIL_USE_TLS：False, MAIL_USE_SSL：True 2、mail = Mail(app)，应用初始化要放在配置项后面，否则配置不生效。 3、flask_mail的send函数要在应用的上下文中执行，在flask shell中测试，我们需要激活应用上下文： 12with app.app_context(): mail.send(msg)]]></content>
+      <categories>
+        <category>flask</category>
+      </categories>
+      <tags>
+        <tag>flask flask_mail</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[flask_mongoengine]]></title>
     <url>%2F2020%2F11%2F06%2Fflask-mongoengine%2F</url>
     <content type="text"><![CDATA[在flask中应用flask_mongoengine 1234567app = Flask(__name__)app.config['MONGODB_SETTINGS'] = &#123; 'db': 'todo_new', 'host': '127.0.0.1', 'port': 27017&#125;db = MongoEngine(app) 配置顺序如上，mongodb配置必须在MongoEngine之前，否则配置不会生效，只会连接到默认数据库test. 坑了半天，网上教程千篇一律的配置写在初始化之后。]]></content>
